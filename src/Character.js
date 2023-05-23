@@ -5,7 +5,16 @@ export default class Character {
     this.stoned = false;
   }
 
-  // Вычисление атаки
+  // Установление дурмана
+  get stonedAssignment() {
+    return this.stoned;
+  }
+
+  set stonedAssignment(bool) {
+    this.stoned = bool;
+  }
+
+  // Задание атаки
   get attack() {
     // Атака = базовой атаки персонажа - дистанции умноженный на множитель дальности
     let attack = this.baseAttack - ((this.distance - 1) * this.attackDistanceMultiplier);

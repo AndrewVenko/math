@@ -22,13 +22,13 @@ describe('Magician', () => {
 
   it('Расчет атаки при дистанции 2 и дурмане', () => {
     magician.distanceInstall = 2;
-    magician.stoned = true;
+    magician.stonedAssignment = true;
     expect(magician.attack).toBe(85);
   });
 
   it('Расчет атаки при дистанции 2 и дурмане', () => {
     magician.distanceInstall = 4;
-    magician.stoned = true;
+    magician.stonedAssignment = true;
     expect(magician.attack).toBe(60);
   });
 });
@@ -54,13 +54,13 @@ describe(' Daemon', () => {
 
   it('Расчет атаки при дистанции 2 и дурмане', () => {
     daemon.distanceInstall = 2;
-    daemon.stoned = true;
+    daemon.stonedAssignment = true;
     expect(daemon.attack).toBe(75);
   });
 
   it('Расчет атаки при дистанции 2 и дурмане', () => {
     daemon.distanceInstall = 4;
-    daemon.stoned = true;
+    daemon.stonedAssignment = true;
     expect(daemon.attack).toBe(30);
   });
 });
